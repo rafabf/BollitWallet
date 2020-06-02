@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A066E6822483C981000D61CB /* DragState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066E6812483C981000D61CB /* DragState.swift */; };
 		A0C32624247C2B3600D7CB86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C32623247C2B3600D7CB86 /* AppDelegate.swift */; };
 		A0C32626247C2B3600D7CB86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C32625247C2B3600D7CB86 /* SceneDelegate.swift */; };
 		A0C32628247C2B3600D7CB86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C32627247C2B3600D7CB86 /* ContentView.swift */; };
 		A0C3262A247C2B3600D7CB86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C32629247C2B3600D7CB86 /* Assets.xcassets */; };
 		A0C3262D247C2B3600D7CB86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C3262C247C2B3600D7CB86 /* Preview Assets.xcassets */; };
 		A0C32630247C2B3600D7CB86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C3262E247C2B3600D7CB86 /* LaunchScreen.storyboard */; };
+		A0C32639247C2C0D00D7CB86 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C32638247C2C0D00D7CB86 /* Card.swift */; };
+		A0C3263B247C2C1B00D7CB86 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3263A247C2C1B00D7CB86 /* Transaction.swift */; };
+		A0C3263E247C37E400D7CB86 /* TransactionHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3263D247C37E400D7CB86 /* TransactionHistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A066E6812483C981000D61CB /* DragState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragState.swift; sourceTree = "<group>"; };
 		A0C32620247C2B3600D7CB86 /* BollitWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BollitWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C32623247C2B3600D7CB86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C32625247C2B3600D7CB86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		A0C3262C247C2B3600D7CB86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A0C3262F247C2B3600D7CB86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0C32631247C2B3600D7CB86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0C32638247C2C0D00D7CB86 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A0C3263A247C2C1B00D7CB86 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		A0C3263D247C37E400D7CB86 /* TransactionHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,10 @@
 		A0C32622247C2B3600D7CB86 /* BollitWallet */ = {
 			isa = PBXGroup;
 			children = (
+				A0C3263C247C37BB00D7CB86 /* View */,
+				A0C32637247C2BEF00D7CB86 /* Model */,
 				A0C32623247C2B3600D7CB86 /* AppDelegate.swift */,
 				A0C32625247C2B3600D7CB86 /* SceneDelegate.swift */,
-				A0C32627247C2B3600D7CB86 /* ContentView.swift */,
 				A0C32629247C2B3600D7CB86 /* Assets.xcassets */,
 				A0C3262E247C2B3600D7CB86 /* LaunchScreen.storyboard */,
 				A0C32631247C2B3600D7CB86 /* Info.plist */,
@@ -73,6 +82,25 @@
 				A0C3262C247C2B3600D7CB86 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A0C32637247C2BEF00D7CB86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0C32638247C2C0D00D7CB86 /* Card.swift */,
+				A0C3263A247C2C1B00D7CB86 /* Transaction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0C3263C247C37BB00D7CB86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3263D247C37E400D7CB86 /* TransactionHistoryView.swift */,
+				A0C32627247C2B3600D7CB86 /* ContentView.swift */,
+				A066E6812483C981000D61CB /* DragState.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A066E6822483C981000D61CB /* DragState.swift in Sources */,
 				A0C32624247C2B3600D7CB86 /* AppDelegate.swift in Sources */,
 				A0C32626247C2B3600D7CB86 /* SceneDelegate.swift in Sources */,
 				A0C32628247C2B3600D7CB86 /* ContentView.swift in Sources */,
+				A0C32639247C2C0D00D7CB86 /* Card.swift in Sources */,
+				A0C3263E247C37E400D7CB86 /* TransactionHistoryView.swift in Sources */,
+				A0C3263B247C2C1B00D7CB86 /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
